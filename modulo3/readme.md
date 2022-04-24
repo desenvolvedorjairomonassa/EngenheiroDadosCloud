@@ -14,3 +14,8 @@ Kubernetes
  aws cli
   - aws config
   - aws eks --region us-west-2 update-kubeconfig --name example-k8-app
+ 
+  cloud-shell in Azurre:
+    - open cloud-shell
+    - git close, this repository
+    - az acs kubernetes get-credentials --name
