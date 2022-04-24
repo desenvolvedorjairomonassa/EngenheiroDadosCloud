@@ -10,3 +10,7 @@ Kubernetes
   - minikube service mynode --url
   - kubectl scale deplyment mynode --replicas=4
   - kubectl get deployments mynode
+
+ aws cli
+  - aws config
+  - aws eks --region us-west-2 update-kubeconfig --name example-k8-app
