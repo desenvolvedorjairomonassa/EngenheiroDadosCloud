@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mynode-deploy
+  labels:
+    name: mynode-deploy
+    app: mynode
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      name: mynode
+      app: mynode
+  template:
+    metadata:
+      name: mynode
+      labels:
+        name: mynode
+        app: mynode
+    spec:
+      containers:
+        - name: main-node
+          image: node:current-alpine3.14
+          ports:
+          - containerPort: 80
